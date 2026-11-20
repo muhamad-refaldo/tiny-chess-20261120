@@ -19,7 +19,8 @@ safety.
 The source is stored compressed (LZMA + base85) so the whole engine fits
 in 4,096 bytes; `main.py` unpacks and runs it. Deterministic: the search
 uses a fixed node budget, never a clock, so a replayed trial plays the
-same moves.
+same moves. The readable source is `engine.py` in the build directory;
+`main.py` is packed from it with the kit's `makefun compress`.
 
 ## Local results (practice trials, 6 games each)
 
